@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Елагина](https://up.htmlacademy.ru/htmlcss/21/user/796671).
-* Наставник: `Неизвестно`.
+* Наставник:[Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
