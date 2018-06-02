@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+       <ul class="site-navigation">
+           <li><a href="info.html">Информация</a></li>
+           <li><a href="photos-video.html">Фото и видео</a></li>
+           <li><a href="state-map">Карта штата</a></li>
+           <li><a href="hotels">Гостиницы</a></li>
+       </ul>
+       <div class="logo">
+         <a class="main-header-logo">
+           <img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седоны">
+         </a>
+       </div> 
+     </nav>
+     <div class="welcome-page">
+      <img src="http://mountains-landscape" width="2706" height="1804" alt="Горный пейзаж">
+       <p class="welcom">Welcom</p>  
+       <p class="gorgeous">to the gorgeous</p>
+       <p class="sedona">Sedona</p>
+       <p class="slogan">Because the Grand Canyon sucks!</p>
+     </div>
+  </header>
+  <main class="container">
+    <section class="introduction">
+      <h1>Седона — небольшой городок в Аризоне,  <br>заслуживающий большего!
+      </h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>  
+    <section class="real-city">
+     <h2>Настоящий городок</h2>
+      <p class="first-reason"><span>— №1 —</span>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      <img src="http://city-photo.ru" width="1600" height="800" alt="Фотография города Седона">
+    </section>
+    <section class="advantage">
+      <div class="houses">
+        <h2>Жильё</h2>
+        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+      </div>
+      <div class="food">
+        <h2>Еда</h2>
+        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </div>
+      <div class="souvenirs">
+        <h2>Сувениры</h2>
+        <p>Не только китайского, но и местного производства!</p>
+      </div>
+    </section> 
+    <section class="bridge">
+      <h2>Там есть Мост дьявола</h2>
+        <p class="second-reason"><span>— №2 —</span>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+         <img src="http://devil-bridge.ru" width="1600" height="800" alt="Фотография Моста дьявола">
+    </section>
+    <section class="small-area">
+      <h2>Небольшая площадь</h2>
+        <p class="third-reason"><span>— №3 —</span>Все достопримечательности находятся очень близко</p>
+    </section>
+    <section class="nice-road">
+      <h2>Красивая дорога</h2>
+        <p class="fourth-reason"><span>— №4 —</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+    </section>
+    <section class="small-number">
+     <h2>Мало туристов</h2>
+        <p class="fifth-reason"><span>— №5 —</span>Большинство едет в Гранд каньон и толпится там</p>
+    </section>
+    </main>
+      <section class="interesting">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br>  
+        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </section>
+      <footer class="main-footer">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30477.062983472628!2d-111.78446452205017!3d34.86491477068535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1527918615497" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div>
+       <!--Здесь будет форма для брони гостиницы и т.д.-->
+        <form>
+          <p>Поиск гостиницы в Седоне</p>
+          <p>Дата заезда</p>
+          <p>Дата выезда</p>
+          <p>Взрослые</p>
+          <p>Дети</p>
+          <button type="button">Найти</button>
+        </form>
+      </div>
+      <div class="footer-hashtag">
+         <!--Не очень поняла,надпись с хештегом будет ссылкой куда-либо?-->
+        <p class="hashtag">#visitsedona</p>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">Website by <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
   </body>
 </html>
