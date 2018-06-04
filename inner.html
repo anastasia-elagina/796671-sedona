@@ -11,74 +11,95 @@
            <li><a href="info.html">Информация</a></li>
            <li><a href="photos-video.html">Фото и видео</a></li>
            <li><a href="state-map">Карта штата</a></li>
-           <li><a href="hotels">Гостиницы</a></li>
+           <li><a href="inner.html">Гостиницы</a></li>
        </ul>
        <div class="logo">
          <a class="main-header-logo">
-           <img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седоны">
+           <img src="http://placehold.it/138x70">
          </a>
        </div> 
      </nav>
     </header>
     <main>
-      <div class="houses-prices">
+      <section class="infrastructure">
       <h2>Инфраструктура</h2>
-       <ul class="infrastructure">
+       <ul class="infrastructure-list">
            <li>Бассейн</li>
            <li>Парковка</li>
            <li>Wi-fi</li>
        </ul>
-       <h2>Жильё</h2>
-       <ul class="houses">
+      </section>
+      <section class="housing">
+        <h2>Жильё</h2>
+        <ul class="housing-list">
            <li>Гостиница</li>
            <li>Мотель</li>
            <li>Аппартаменты</li>
-       </ul> 
-       <h2>Стоимость в сутки (р)</h2>
-       <p class="prices">от 0 до 3000</p>
-       <button type="button">Показать</button>         
-      </div>
+        </ul>    
+      </section>
+      <section class="prices">
+        <h2>Стоимость в сутки (р)</h2>
+        <p class="prices-range">от 0 до 3000</p>
+        <button type="submit">Показать</button>   
+      </section>  
     </main>
     <section class="search-results">
       <h2 class="found">Найдено:3</h2>
-      <h3 class="sorting">Сортировка:</h3>
+      <p class="sorting">Сортировка:</p>
       <ul class="sorting-list">
-        <li>по цене</li>
-        <li>по типу</li>
-        <li>по рейтингу</li>
+        <li><a href="inner.html?sort=price">по цене</a></li>
+        <li><a href="inner.html?sort=type">по типу</a></li>
+        <li><a href="inner.html?sort=rating">по рейтингу</a></li>
       </ul>
         <!--Здесь будут кнопки сортировки по цене, типу, рейтингу-->
     </section>
-    <div class="hotel">
-      <h2>Amara resort & SPA</h2>
-      <img src="img/amara.svg" width="135" height="90" alt="фотография отеля Амара">
-      <span>гостиница</span>
-      <span>от 4000 р.</span>
-      <button type="button">подробнее</button>
-      <button type="button">забронировать</button>
-      <span>рейтинг 8,5</span>
-    </div>
-    <div class="motel">
-      <h2>Desert quail inn</h2>
-      <img src="img/desert-quail-inn.svg" width="135" height="90" alt="фотография мотеля дезерт">
-      <span>мотель</span>
-      <span>от 3000 р.</span>
-      <button type="button">подробнее</button>
-      <button type="button">забронировать</button>
-      <span>рейтинг 8,9</span>
-    </div>
-    <div class="apartment">
-      <h2>Villas at poco diablo</h2>
-      <img src="img/poco-diablo.svg" width="135" height="90" alt="фотография апартаментов виллы в поко дьябло">
-      <span>апартаменты</span>
-      <span>от 2000 р.</span>
-      <button type="button">подробнее</button>
-      <button type="button">забронировать</button>
-      <span>рейтинг 9,2</span>
-    </div>
+    <section class="hotels">
+     <ul>
+       <li>
+         <section class="hotel-photo"><img src="http://placehold.it/135x90">
+         </section>
+         <section class="about-hotel">
+           <h2>Amara resort & SPA</h2>
+           <span>гостиница</span>
+           <span>от 4000 р.</span>
+           <a href="amara-resort-details.html">подробнее</a>
+           <a href="amara-resort-booking.html">забронировать</a>
+         </section>
+         <section class="raiting">
+           <span>рейтинг 8,5</span>
+         </section>
+        </li>
+        <li>
+         <section class="hotel-photo"><img src="http://placehold.it/135x90">
+         </section>
+         <section class="about-hotel"> 
+           <h2>Desert quail inn</h2>
+           <span>мотель</span>
+           <span>от 3000 р.</span>
+           <a href="desert-quail-details.html">подробнее</a>
+           <a href="desert-quail-booking.html">забронировать</a>
+           <section class="raiting">
+             <span>рейтинг 8,9</span>
+           </section>
+            </section>
+        </li>
+        <li>
+         <section class="hotel-photo"><img src="http://placehold.it/135x90">
+         </section>
+         <section class="about-hotel"> 
+           <h2>Villas at poco diablo</h2>
+           <span>апартаменты</span>
+           <span>от 2000 р.</span>
+           <a href="poco-diablo-details.html">подробнее</a>
+           <a href="poco-diablo-booking.html">забронировать</a>
+         </section>
+         <section class="raiting">
+           <span>рейтинг 9,2</span>
+         </section>
+        </li>
+      </ul>
     <footer class="main-footer">
     <div class="footer-hashtag">
-         <!--Не очень поняла,надпись с хештегом будет ссылкой куда-либо?-->
         <p class="hashtag">#visitsedona</p>
     </div>
     <div class="footer-social">
