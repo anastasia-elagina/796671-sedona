@@ -21,27 +21,52 @@
      </nav>
     </header>
     <main>
+      <form action="http://echo.htmlacademy.ru" method="get">
       <section class="infrastructure">
       <h2>Инфраструктура</h2>
        <ul class="infrastructure-list">
-           <li>Бассейн</li>
-           <li>Парковка</li>
-           <li>Wi-fi</li>
+           <li><input type="checkbox" id="pool" checked>
+             <label for="pool">Бассейн</label>
+           </li>
+           <li><input type="checkbox" id="parking">
+             <label for="parking">Парковка</label>
+           </li>
+           <li><input type="checkbox" id="wi-fi">
+             <label for="wi-fi">Wi-fi</label>
+           </li>
        </ul>
       </section>
       <section class="housing">
         <h2>Жильё</h2>
         <ul class="housing-list">
-           <li>Гостиница</li>
-           <li>Мотель</li>
-           <li>Аппартаменты</li>
+           <li><input type="checkbox" id="hotel" checked>
+             <label for="hotel">Гостиница</label>
+           </li>
+           <li><input type="checkbox" id="motel" checked>
+             <label for="motel">Мотель</label>
+           </li>
+           <li><input type="checkbox" id="apartment" checked>
+             <label for="apartment">Апартаменты</label>
+           </li>
         </ul>    
       </section>
       <section class="prices">
         <h2>Стоимость в сутки (р)</h2>
-        <p class="prices-range">от 0 до 3000</p>
+        <p class="prices-range">
+          <label for="from">
+          <input type="text" value="от 0" id="from">
+          </label>
+          <label for="to">
+          <input type="text" value="до 3000" id="to">
+          </label>
+          <label for="ranging">
+          <input type="range" min="0" max="4000" id="ranging">
+          </label>
+          <!--С ползунком пока так прописывать, а потом уже в css доработаем, правильно поняла?-->
+        </p>
         <button type="submit">Показать</button>   
-      </section>  
+      </section> 
+      </form> 
     </main>
     <section class="search-results">
       <h2 class="found">Найдено:3</h2>
@@ -50,8 +75,8 @@
         <li><a href="inner.html?sort=price">по цене</a></li>
         <li><a href="inner.html?sort=type">по типу</a></li>
         <li><a href="inner.html?sort=rating">по рейтингу</a></li>
-        <li><a href="inner.html?sort=ascending">Сортировка по возрастанию</a></li>
-        <li><a href="inner.html?sort=descending">Сортировка по убыванию</a></li>
+        <li><a href="inner.html?sort=ascending"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
+        <li><a href="inner.html?sort=descending"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
       </ul>
     </section>
      <ul>
@@ -104,12 +129,12 @@
     </div>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+         <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden"> Youtube</span></a></li>
       </ul>
     </div>
-    <p class="footer-copyright">Website by <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+    <p class="footer-copyright">Website by <a class="button" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a>
       </p>
     </footer>
   </body>
