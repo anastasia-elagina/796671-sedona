@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="style.css" >
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
        <ul class="site-navigation">
@@ -60,7 +63,6 @@
           <input type="text" placeholder="до 3000" id="to">
           </label>
         </p>
-        <!--Не уверена, что правильно поняла правильно про div и span-->
         <div class="slider">
             <span class="controller-min"></span>
             <span class="controller-max"></span>
@@ -73,9 +75,9 @@
       <h2 class="found">Найдено:3</h2>
       <p class="sorting">Сортировка:</p>
       <ul class="sorting-list">
-        <li><a href="inner.html?sort=price">по цене</a></li>
-        <li><a href="inner.html?sort=type">по типу</a></li>
-        <li><a href="inner.html?sort=rating">по рейтингу</a></li>
+        <li class="price"><a href="inner.html?sort=price">по цене</a></li>
+        <li class="type"><a href="inner.html?sort=type">по типу</a></li>
+        <li class="raiting"><a href="inner.html?sort=rating">по рейтингу</a></li>
         <li><a href="inner.html?sort=ascending"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
         <li><a href="inner.html?sort=descending"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
       </ul>
@@ -87,13 +89,13 @@
          </section>
          <section class="about-hotel">
            <h2>Amara resort & SPA</h2>
-           <span>гостиница</span>
-           <span>от 4000 р.</span>
+           <span class="description">гостиница</span>
+           <span class="description">от 4000 р.</span>
            <a href="amara-resort-details.html">подробнее</a>
-           <a href="amara-resort-booking.html">забронировать</a>
+           <a href="amara-resort-booking.html"><span class="booking">забронировать</span></a>
          </section>
          <section class="raiting">
-           <span>рейтинг 8,5</span>
+           <span class="description">рейтинг 8,5</span>
          </section>
         </li>
         <li>
@@ -101,12 +103,12 @@
          </section>
          <section class="about-hotel"> 
            <h2>Desert quail inn</h2>
-           <span>мотель</span>
-           <span>от 3000 р.</span>
+           <span class="description">мотель</span>
+           <span class="description">от 3000 р.</span>
            <a href="desert-quail-details.html">подробнее</a>
-           <a href="desert-quail-booking.html">забронировать</a>
+           <a href="desert-quail-booking.html"><span class="booking">забронировать</span></a>
            <section class="raiting">
-             <span>рейтинг 8,9</span>
+             <span class="description">рейтинг 8,9</span>
            </section>
             </section>
         </li>
@@ -115,30 +117,30 @@
          </section>
          <section class="about-hotel"> 
            <h2>Villas at poco diablo</h2>
-           <span>апартаменты</span>
-           <span>от 2000 р.</span>
+           <span class="description">апартаменты</span>
+           <span class="description">от 2000 р.</span>
            <a href="poco-diablo-details.html">подробнее</a>
-           <a href="poco-diablo-booking.html">забронировать</a>
+           <a href="poco-diablo-booking.html"><span class="booking">забронировать</span></a>
          </section>
          <section class="raiting">
-           <span>рейтинг 9,2</span>
+           <span class="description">рейтинг 9,2</span>
          </section>
         </li>
       </ul>
       </section>
-    <footer class="main-footer">
+   <footer class="main-footer">
     <div class="footer-hashtag">
-        <p class="hashtag">#visitsedona</p>
+      <p class="hashtag">#visitsedona</p>
     </div>
     <div class="footer-social">
-      <ul>
-         <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden"> Youtube</span></a></li>
+      <ul class="social-list">
+        <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden"> Youtube</span></a></li>
       </ul>
     </div>
     <p class="footer-copyright">Website by <a class="button" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a>
-      </p>
-    </footer>
+    </p>
+  </footer>
   </body>
 </html>
