@@ -5,23 +5,7 @@ body {
     font-weight: 400;
     color: #000000;
     text-transform: uppercase;
-    background-color: #f2f2f2;
-    background-image: url("img/background-image.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;  
-}
-
-.inner-page {
-   font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
-    background-image: url("img/hotels-background.jpg");
-    background-position: top center;
-    background-repeat: no-repeat; 
+    background-color:#ffffff;
 }
 
 a {
@@ -29,13 +13,11 @@ a {
 }
 
 .main-navigation {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
+   
     background-color: #ffffff;
 }
 
+/*ссылки: информация, фото и видео, карта штата, гостиницы*/
 .site-navigation {
      list-style: none;
 }
@@ -51,9 +33,13 @@ a {
     border: none;
 }
 
+/*ссылка"гостиницы" для inner.html*/
+.visited-link a:visited {
+    color: #766357;
+}
+
 .site-navigation a:hover,
-.site-navigation a:focus,
-.site-navigation a:active{
+.site-navigation a:focus {
     color: #81b3d2;
 }
 
@@ -62,27 +48,47 @@ a {
     opacity: 0.3;
 }
 
-form a {
-    font-size: 14px;
+/*Поиск гостиницы в Седоне*/
+.search-hotel a {
+    background-color:#766357;  
+}
+
+.search-hotel a:hover,
+.search-hotel a:focus {
+    
+    background-color: #604e43;
+}
+
+.search-hotel a:active {
+    background-color: #503e33;
+   
+}
+
+.button-text {
+    font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
     text-transform: uppercase;
-    background-color:#766357;
     border: none;
 }
 
-form a:hover,
-form a:focus {
+.button-text:active {
     color: #ffffff;
-    background-color: #604e43;
+    opacity: 0.3;
 }
 
-form a:active {
-   color: #ffffff;
-    opacity: 0.3; 
+/*даты заезда, выезда, кол-во взрослых и детей*/
+.arrival-date,
+.departure-date,
+.adult,
+.children {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #000000;
 }
 
 .social-list {
@@ -101,17 +107,83 @@ form a:active {
    text-align: center; 
 }
 
-.booking a:hover,
-.booking a:focus {
-    color: #ffffff;
-    background-color: #604e43;
+/*кнопка "найти"*/
+p+button{
+    background-color:#81b3d2;
 }
 
-.booking a:active {
+p+button:hover,
+p+button:focus {
+    background-color: #669ec0;
+}
+
+p+button:active {
+   background-color: #5496bd;
+}
+
+.button-search {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button-search:active {
     color: #ffffff;
     opacity: 0.3;
-    background-color: #503e33;
+    border: none;
 }
+
+
+/*плейсхолдер для inner.html стоимость в сутки*/
+input::placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    border: 2px solid #ffffff;
+    padding: 5px 20px 5px 20px;
+}
+
+.prices-range input::placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 5px 20px 5px 20px;
+}
+
+/*кнопка "показать"*/
+div+button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    padding: 5px 20px 5px 20px;
+}
+
+div+button:hover,
+div+button:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+input[checkbox] {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/*для чекбокса в состоянии блокировки нужен disabled?*/
 
 .introduction{
     background-color: #ffffff;
@@ -150,7 +222,8 @@ form a:active {
     line-height: 21px;
     font-weight: 400;
     color: #ffffff;
-    text-align: center; 
+    text-align: center;
+    background-color: #f2f2f2;
 }
 
 .real-city,
@@ -158,16 +231,16 @@ form a:active {
     background-color: #81b3d2;
 }
 
-h3 {
+.features-title {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
     color: #000000;
 }
 
-li>.houses,
-li>.food,
-li>.souvenirs {
+.houses,
+.food,
+.souvenirs {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -182,23 +255,23 @@ li>.souvenirs {
     text-align: center; 
 }
 
-.interesting {
-    text-align: center;
-    background-color: #ffffff;
-}
-
-h2 .interesting {
-    font-size: 30px;
-    line-height: 36px;
+.reasons-title {
+    font-size: 21px;
+    line-height: 21px;
     font-weight: 700;
     text-align: center;
     color: #000000;
 }
 
-p .interesting {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
+.interesting {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.interesting-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
     color:  #333333;
 }
 
@@ -206,7 +279,7 @@ p .interesting {
     background-color: #ffffff;
 }
 
-form p {
+.search-data {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -223,10 +296,9 @@ form p {
 }
 
 .footer-copyright {
-    
     font-size: 14px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: 400;
     color: #000000;
     background-color: #ffffff;   
 }
@@ -259,49 +331,14 @@ form p {
 
 .search-results {
     background-color: #ffffff;
-    color: #000000;
 }
+
 
 .about-hotel h2 {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
-}
-
-.raiting a:hover,
-.raiting a:focus {
-    color: #81b3d2;
-    border-bottom: 1px dashed #81b3d2;
-}
-
-.raiting a:active {
-    color: #81b3d2;
-   
-}
-
-.type a:hover,
-.type a:focus,
-.type a:active { 
-    color: #669ec0;
-}
-
-.type a:active {
-    color: #ffffff;
-    opacity: 0.3;
-    background-color: #5496bd;
-}
-
-.price a:hover,
-.price a:focus,
-.price a:active{
-    color: #669ec0;
-}
-
-.price a:active {
-    color: #ffffff;
-    opacity: 0.3;
-    background-color: #5496bd;
 }
 
 .about-hotel h2:hover,
@@ -315,11 +352,37 @@ form p {
     opacity: 0.3;
 }
 
+/*по цене, по типу, по рейтингу*/
+.sorting-list a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.3;
+    border-bottom: 1px dashed #81b3d2;
+    }
+
+.sorting-list a:hover,
+.sorting-list a:focus,
+.sorting-list a:active {
+    color: #81b3d2;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-list a:active {
+    color: #000000;
+}
+
+
 .description {
-   font-size: 14px;
+    font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: #333333; 
+}
+
+.description:last-child {
+    background-color: #f2f2f2;
 }
 
 .housing {
@@ -341,35 +404,7 @@ form p {
     color: #000000;
 }
 
-.sorting-list a {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #81b3d2;
-}
-
-.type a,
-.raiting a,
-.price a {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #000000;
-    opacity: 0.3;
-    border-bottom: 1px dashed #81b3d2;
-}
-
-.about-hotel a {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #81b3d2;
-}
-
-
-
-
+/*ссылка "забронировать"*/
 .booking {
     font-size: 14px;
     line-height: 21px;
@@ -377,4 +412,49 @@ form p {
     color: #ffffff;
     background-color: #766357;
 }
+.booking:hover,
+.booking:focus,
+.booking:active {
+    color: #ffffff;
+    background-color: #604e43;  
+}
+.booking:active {
+    color: #ffffff;
+    opacity: 0.3; 
+}
 
+/*ссылка "подробнее"*/
+.details {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.details:hover,
+.details:focus,
+.details:active {
+    color: #ffffff;
+    background-color: #669ec0;  
+}
+
+.details:active {
+    color: #ffffff;
+    opacity: 0.3;  
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.background {
+    background-image: url("/img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+/*не могу вставить фон, уже по-всякому пробовала путь менять*/

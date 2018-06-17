@@ -4,8 +4,8 @@
     <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="style.css" >
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" >
     
   </head>
 
@@ -24,6 +24,8 @@
          </a>
       </div>
     </nav>
+    <div class="background">
+    </div>
     <div class="welcome-page">
       <img src="img/welcom.png" width="458" height="352" alt="Welcom">
       
@@ -43,15 +45,15 @@
             <div class="city-img"><img src="img/city.jpg" width="800" height="400" alt="Real city"></div>
         <ul class="features">
           <li class="features-list">
-            <h3>Жильё</h3>
+            <h3 class="features-title">Жильё</h3>
             <p class="houses">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
          </li>
          <li>
-           <h3>Еда</h3>
+           <h3 class="features-title">Еда</h3>
            <p class="food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
          </li>
          <li>
-          <h3>Сувениры</h3>
+          <h3 class="features-title">Сувениры</h3>
           <p class="souvenirs">Не только китайского, но и местного производства!</p>
          </li>
        </ul>
@@ -62,42 +64,44 @@
             <img src="img/bridge.jpg" width="800" height="400" alt="Devil's bridge">
         </li>
         <li class="third-reason">
-          <h2>Небольшая площадь</h2>
+          <h2 class="reasons-title">Небольшая площадь</h2>
           <p><span>— №3 —</span>Все достопримечательности находятся очень близко</p>
         </li>
         <li class="fourth-reason">
-          <h2>Красивая дорога</h2>
+          <h2 class="reasons-title">Красивая дорога</h2>
           <p><span>— №4 —</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="fifth-reason">
-          <h2>Мало туристов</h2>
+          <h2 class="reasons-title">Мало туристов</h2>
           <p><span>— №5 —</span>Большинство едет в Гранд каньон и толпится там</p>
         </li>
        </ul>
     </section>
     <section class="interesting">
-      <h2>Заинтересовались?</h2>
+      <h2 class="interesting-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
    <div class="map">
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30477.062983472628!2d-111.78446452205017!3d34.86491477068535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1527918615497" width="1200" height="473" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="form">
-      <form action="http://echo.htmlacademy.ru" method="get">
-        <a class="button" href="search-hotel.html">Поиск гостиницы в Седоне</a>
-      <p>
+      <form class="search-hotel" action="http://echo.htmlacademy.ru" method="get">
+          <a class="button" href="search-hotel.html"><span class="button-text">Поиск гостиницы в Седоне</span></a>
+      <p class="search-data">
         <label for="arrival-date">Дата заезда</label>
-        <input type="text" name="date" value="2017-04-24" id="arrival-date">
+        <input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
       </p>
-      <p>
+      <p class="search-data">
         <label for="departure-date">Дата выезда</label>
-        <input type="text" name="date" value="2017-07-04" id="departure-date">
+        <input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
       </p>
-      <p>
-        <label for="adult">Взрослые <input type="number" min="1" max="10" name="number" value="2" id="adult"></label>
-        <label for="children">Дети <input type="number" min="0" max="10" name="number" value="0" id="children"></label>
+      <p class="search-data">
+        <label for="adult">Взрослые <input type="number" min="1" max="10" name="number" id="adult" placeholder="2"></label>
+        <label for="children">Дети <input type="number" min="0" max="10" name="number" id="children" placeholder="0">
+        </label>
       </p>
-      <button class="search" type="submit">Найти</button>
+      <button type="submit"><span class="button-search">Найти</span></button>
+     <!--сделала смену цвета текста, но теперь кнопку перекосило-->
     </form>
         </div>
   </main>
