@@ -49,35 +49,28 @@ a {
 }
 
 /*Поиск гостиницы в Седоне*/
-.search-hotel a {
-    background-color:#766357;  
-}
 
-.search-hotel a:hover,
-.search-hotel a:focus {
-    
-    background-color: #604e43;
-}
-
-.search-hotel a:active {
-    background-color: #503e33;
-   
-}
-
-.button-text {
+.button.button-text {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
     color: #ffffff;
+    background-color:#766357; 
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
 }
 
-.button-text:active {
-    color: #ffffff;
-    opacity: 0.3;
+.button.button-text:hover,
+.button.button-text:focus,
+.button.button-text:active {
+    background-color: #604e43;
+}
+
+.button.button-text:active {
+    color: #928a85;
+    background-color: #503e33;
 }
 
 /*даты заезда, выезда, кол-во взрослых и детей*/
@@ -108,44 +101,81 @@ a {
 }
 
 /*кнопка "найти"*/
-p+button{
-    background-color:#81b3d2;
-}
-
-p+button:hover,
-p+button:focus {
-    background-color: #669ec0;
-}
-
-p+button:active {
-   background-color: #5496bd;
-}
 
 .button-search {
     font-size: 21px;
     font-weight: 700;
     text-align: center;
     color: #ffffff;
+    background-color:#81b3d2;
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
 }
 
+.button-search:hover,
+.button-search:focus {
+    background-color: #669ec0;
+    border: none;
+}
+
 .button-search:active {
-    color: #ffffff;
-    opacity: 0.3;
+    color: #94b9d2;
+    background-color: #5496bd;
     border: none;
 }
 
 
-/*плейсхолдер для inner.html стоимость в сутки*/
-input::placeholder {
+
+.price-field {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
-    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;   
+}
+
+/*плейсхолдер для inner.html стоимость в сутки*/
+.price-field::placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
     border: 2px solid #ffffff;
     padding: 5px 20px 5px 20px;
+}
+
+/*кнопка "показать"*/
+.show {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    padding: 5px 20px 5px 20px;
+    background-color: transparent;
+}
+
+.show:hover,
+.show:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+}
+
+
+.checkbox-list {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
 }
 
 .prices-range input::placeholder {
@@ -157,33 +187,63 @@ input::placeholder {
     padding: 5px 20px 5px 20px;
 }
 
-/*кнопка "показать"*/
-div+button {
+.date-form::placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
+    font-weight: 700;
+    text-align: left;
     text-transform: uppercase;
-    border: 2px solid #ffffff;
-    padding: 5px 20px 5px 20px;
-}
-
-div+button:hover,
-div+button:focus {
-    background-color: #ffffff;
     color: #000000;
+    background-color: #f2f2f2;
 }
 
-input[checkbox] {
+.date-form:hover {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ebebeb;
+}
+.date-form:focus {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
 }
 
-/*для чекбокса в состоянии блокировки нужен disabled?*/
+.guests-amount::placeholder {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+.guests-amount:hover {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ebebeb;
+}
+.guests-amount:focus {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+}
 
 .introduction{
     background-color: #ffffff;
@@ -333,7 +393,6 @@ input[checkbox] {
     background-color: #ffffff;
 }
 
-
 .about-hotel h2 {
     font-size: 21px;
     line-height: 26px;
@@ -348,31 +407,48 @@ input[checkbox] {
 }
 
 .about-hotel h2:active {
-    color: #000000;
-    opacity: 0.3;
+    color: #cacaca;
 }
 
 /*по цене, по типу, по рейтингу*/
-.sorting-list a {
+
+.type a,
+.raiting a {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    color: #000000;
-    opacity: 0.3;
+    color: #cacaca;
     border-bottom: 1px dashed #81b3d2;
-    }
+}
 
-.sorting-list a:hover,
-.sorting-list a:focus,
-.sorting-list a:active {
+.type a:hover,
+.type a:focus,
+.type a:active {
     color: #81b3d2;
     border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-list a:active {
+.type a:active {
     color: #000000;
+    border-bottom: 0px;
 }
 
+.raiting a:hover,
+.raiting a:focus,
+.raiting a:active {
+    color: #81b3d2;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.raiting a:active {
+    color: #000000;
+    border-bottom: 0px;
+}
+
+.price a {
+    color: #81b3d2;
+    border-bottom: 0px;
+}
 
 .description {
     font-size: 14px;
@@ -383,10 +459,6 @@ input[checkbox] {
 
 .description:last-child {
     background-color: #f2f2f2;
-}
-
-.housing {
-    background-color: #ffffff;
 }
 
 .found {
@@ -419,8 +491,8 @@ input[checkbox] {
     background-color: #604e43;  
 }
 .booking:active {
-    color: #ffffff;
-    opacity: 0.3; 
+    color: #928a85;
+     background-color: #503e33;  
 }
 
 /*ссылка "подробнее"*/
@@ -440,8 +512,8 @@ input[checkbox] {
 }
 
 .details:active {
-    color: #ffffff;
-    opacity: 0.3;  
+    color: #85b0cd;
+    background-color: #5496bd;
 }
 
 .visually-hidden {
@@ -452,9 +524,16 @@ input[checkbox] {
     margin: -1px;
 }
 
-.background {
-    background-image: url("/img/bg.jpg");
+.hotels-background {
+    background-image: url("../img/hotels-background.jpg");
+    background-size: 1200px 717px;
     background-position: top center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
-/*не могу вставить фон, уже по-всякому пробовала путь менять*/
+ 
+.background {
+    background-image: url("../img/bg.jpg");
+    background-size: 1200px 561px;
+    background-position: top center;
+    background-repeat: no-repeat; 
+}

@@ -25,30 +25,32 @@
     </header>
     <main>
       <form action="http://echo.htmlacademy.ru" method="get">
-      <section class="infrastructure">
-      <h2>Инфраструктура</h2>
-       <ul class="infrastructure-list">
-           <li><input type="checkbox" id="pool" checked>
+     <div class="hotels-background"> 
+       <section class="infrastructure">
+         <h2>Инфраструктура</h2>
+         <ul class="infrastructure-list">
+           <li><input class="checkbox-list" type="checkbox" id="pool" checked>
              <label for="pool">Бассейн</label>
            </li>
-           <li><input type="checkbox" id="parking">
+           <li><input class="checkbox-list" type="checkbox" id="parking">
              <label for="parking">Парковка</label>
            </li>
-           <li><input type="checkbox" id="wi-fi">
+           <li><input class="checkbox-list" type="checkbox" id="wi-fi">
              <label for="wi-fi">Wi-fi</label>
            </li>
        </ul>
+       
       </section>
       <section class="housing">
         <h2>Жильё</h2>
         <ul class="housing-list">
-           <li><input type="checkbox" id="hotel" checked>
+           <li><input class="checkbox-list" type="checkbox" id="hotel" checked>
              <label for="hotel">Гостиница</label>
            </li>
-           <li><input type="checkbox" id="motel" checked>
+           <li><input class="checkbox-list" type="checkbox" id="motel" checked>
              <label for="motel">Мотель</label>
            </li>
-           <li><input type="checkbox" id="apartment" checked>
+           <li><input class="checkbox-list" type="checkbox" id="apartment" checked>
              <label for="apartment">Апартаменты</label>
            </li>
         </ul>    
@@ -57,33 +59,33 @@
         <h2>Стоимость в сутки (р)</h2>
         <p class="prices-range">
           <label for="from">
-          <input type="text" placeholder="от 0" id="from" >
+          <input class="price-field" type="text" placeholder="от 0" id="from" >
           </label>
           <label for="to">
-          <input type="text" placeholder="до 3000" id="to">
+          <input class="price-field" type="text" placeholder="до 3000" id="to">
           </label>
         </p>
         <div class="slider">
             <span class="controller-min"></span>
             <span class="controller-max"></span>
         </div>
-        <button type="submit">Показать</button>   
-      </section> 
+        <button class="show" type="submit">Показать</button>   
+      </section>
+      </div> 
       </form> 
     </main>
     <section class="search-results">
       <h2 class="found">Найдено:3</h2>
       <p class="sorting">Сортировка:</p>
       <ul class="sorting-list">
-        <li class="price"><a href="inner.html?sort=price">>по цене</a></li>
+        <li class="price"><a href="inner.html?sort=price">по цене</a></li>
         <li class="type"><a href="inner.html?sort=type">по типу</a></li>
         <li class="raiting"><a href="inner.html?sort=rating">по рейтингу</a></li>
-        <!--здесь тоже не получилось сделать в активном состоянии нужный цвет-->
         <li class="ascending"><a href="inner.html?sort=ascending"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
         <li class="descending"><a href="inner.html?sort=descending"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
       </ul>
     </section>
-    <section class="housing">
+    <section class="housing-list">
       <ul>
         <li>
       <section class="hotel-photo"><img src="img/amara.jpg" width="135" height="90" alt="Amara resort">

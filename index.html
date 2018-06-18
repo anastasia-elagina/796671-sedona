@@ -25,10 +25,10 @@
       </div>
     </nav>
     <div class="background">
-    </div>
+    
     <div class="welcome-page">
-      <img src="img/welcom.png" width="458" height="352" alt="Welcom">
-      
+      <img src="img/welcom.png" width="458" height="352" alt="Welcom"> 
+    </div>
     </div>
   </header>
     <main class="container">
@@ -86,22 +86,21 @@
     </div>
     <div class="form">
       <form class="search-hotel" action="http://echo.htmlacademy.ru" method="get">
-          <a class="button" href="search-hotel.html"><span class="button-text">Поиск гостиницы в Седоне</span></a>
+          <a class="button button-text" href="search-hotel.html">Поиск гостиницы в Седоне</a>
       <p class="search-data">
         <label for="arrival-date">Дата заезда</label>
-        <input type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
+        <input class="date-form" type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
       </p>
       <p class="search-data">
         <label for="departure-date">Дата выезда</label>
-        <input type="text" name="date" id="departure-date" placeholder="4 июля 2017">
+        <input class="date-form" type="text" name="date" id="departure-date" placeholder="4 июля 2017">
       </p>
       <p class="search-data">
-        <label for="adult">Взрослые <input type="number" min="1" max="10" name="number" id="adult" placeholder="2"></label>
-        <label for="children">Дети <input type="number" min="0" max="10" name="number" id="children" placeholder="0">
+        <label for="adult">Взрослые <input class="guests-amount" type="number" min="1" max="10" name="number" id="adult" placeholder="2"></label>
+        <label for="children">Дети <input class="guests-amount" type="number" min="0" max="10" name="number" id="children" placeholder="0">
         </label>
       </p>
-      <button type="submit"><span class="button-search">Найти</span></button>
-     <!--сделала смену цвета текста, но теперь кнопку перекосило-->
+      <button class="button-search" type="submit">Найти</button>
     </form>
         </div>
   </main>
