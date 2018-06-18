@@ -24,8 +24,7 @@
      </nav>
     </header>
     <main>
-      <form action="http://echo.htmlacademy.ru" method="get">
-     <div class="hotels-background"> 
+      <form class="hotels-background" action="http://echo.htmlacademy.ru" method="get">
        <section class="infrastructure">
          <h2>Инфраструктура</h2>
          <ul class="infrastructure-list">
@@ -56,7 +55,7 @@
         </ul>    
       </section>
       <section class="prices">
-        <h2>Стоимость в сутки (р)</h2>
+        <h2>Стоимость в сутки (р):</h2>
         <p class="prices-range">
           <label for="from">
           <input class="price-field" type="text" placeholder="от 0" id="from" >
@@ -71,16 +70,15 @@
         </div>
         <button class="show" type="submit">Показать</button>   
       </section>
-      </div> 
       </form> 
     </main>
     <section class="search-results">
       <h2 class="found">Найдено:3</h2>
       <p class="sorting">Сортировка:</p>
       <ul class="sorting-list">
-        <li class="price"><a href="inner.html?sort=price">по цене</a></li>
-        <li class="type"><a href="inner.html?sort=type">по типу</a></li>
-        <li class="raiting"><a href="inner.html?sort=rating">по рейтингу</a></li>
+        <li class="sort-item sort-current"><a href="inner.html?sort=price">по цене</a></li>
+        <li class="sort-item"><a href="inner.html?sort=type">по типу</a></li>
+        <li class="sort-item"><a href="inner.html?sort=rating">по рейтингу</a></li>
         <li class="ascending"><a href="inner.html?sort=ascending"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
         <li class="descending"><a href="inner.html?sort=descending"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
       </ul>

@@ -125,12 +125,10 @@ a {
     border: none;
 }
 
-
-
 .price-field {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
@@ -142,10 +140,9 @@ a {
 .price-field::placeholder {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
-    border: 2px solid #ffffff;
     padding: 5px 20px 5px 20px;
 }
 
@@ -167,7 +164,6 @@ a {
 .show:focus {
     background-color: #ffffff;
     color: #000000;
-    border: none;
 }
 
 
@@ -178,14 +174,6 @@ a {
     color: #ffffff;
 }
 
-.prices-range input::placeholder {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    padding: 5px 20px 5px 20px;
-}
 
 .date-form::placeholder {
     font-family: "PT Sans", Arial, sans-serif;
@@ -412,8 +400,7 @@ a {
 
 /*по цене, по типу, по рейтингу*/
 
-.type a,
-.raiting a {
+.sort-item a {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -421,31 +408,19 @@ a {
     border-bottom: 1px dashed #81b3d2;
 }
 
-.type a:hover,
-.type a:focus,
-.type a:active {
+.sort-item a:hover,
+.sort-item a:focus,
+.sort-item a:active {
     color: #81b3d2;
     border-bottom: 1px dashed #81b3d2;
 }
 
-.type a:active {
+.sort-item a:active {
     color: #000000;
     border-bottom: 0px;
 }
 
-.raiting a:hover,
-.raiting a:focus,
-.raiting a:active {
-    color: #81b3d2;
-    border-bottom: 1px dashed #81b3d2;
-}
-
-.raiting a:active {
-    color: #000000;
-    border-bottom: 0px;
-}
-
-.price a {
+.sort-current a {
     color: #81b3d2;
     border-bottom: 0px;
 }
@@ -531,7 +506,7 @@ a {
     background-repeat: no-repeat; 
 }
  
-.background {
+.welcome-page {
     background-image: url("../img/bg.jpg");
     background-size: 1200px 561px;
     background-position: top center;
