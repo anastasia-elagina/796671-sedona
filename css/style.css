@@ -5,59 +5,10 @@ body {
     font-weight: 400;
     color: #000000;
     text-transform: uppercase;
-    /*    background-color:#ffffff;*/
+        background-color:#ffffff;
     width: 1200px;
     margin: 0 auto;
 }
-
-/*
-.form {
-    outline: 1px solid #ff8800;
-    background-color: aquamarine;
-}
-
-
-.site-navigation {
-    outline: 1px solid #ff8800;
-    background-color: coral;
-}
-
-.main-header {
-    outline: 1px solid #8091e8;
-    background-color: aquamarine;
-}
-
-
-.main-navigation {
-    outline: 1px solid #e3d824;
-    background-color: blue;
-}
-
-.main-header-logo {
-    outline: 1px solid #24e324;
-    background-color: burlywood;
-}
-
-
-.introduction {
-    outline: 1px solid #ff390f;
-
-}
-
-.reasons {
-    outline: 1px solid #24e324;
-}
-
-.first-reason-block {
-    outline: 1px solid #b71bea;
-}
-
-.first-reason-text {
-    outline: 1px solid #3a0ec7;
-}
-
-подсветку закомментировала пока
-*/
 
 a {
     text-decoration: none;
@@ -132,7 +83,13 @@ a {
 }
 
 .social-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 151px;
     list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .logo {
@@ -143,9 +100,9 @@ a {
     text-align: center;
 }
 
-.welcome-page {
-    text-align: center;
-}
+
+
+*/
 
 .welcom-img {
     max-width: 100%;
@@ -296,7 +253,13 @@ a {
 }
 
 .introduction {
+    width: 1200px;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 57px;
+    padding: 0;
     background-color: #ffffff;
+    
 }
 
 .introduction h1 {
@@ -323,8 +286,10 @@ a {
 .reasons-list,
 .features {
     list-style: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
+     
+    
 
 }
 
@@ -334,19 +299,21 @@ a {
 }
 
 .reasons-list {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     color: #ffffff;
     text-align: center;
     background-color: #f2f2f2;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .real-city,
 .bridge {
     background-color: #81b3d2;
+    
 }
 
 .features-title {
@@ -354,6 +321,11 @@ a {
     line-height: 21px;
     font-weight: 700;
     color: #000000;
+   
+    position: relative;
+margin: 0;
+    margin-top: 30px;
+   
 }
 
 .houses,
@@ -364,19 +336,42 @@ a {
     font-weight: 400;
     color: #333333;
     text-align: center;
+    margin-bottom: 87px;
+    
 }
 
 .reasons-block {
+display: flex;
+     
+
+   flex-wrap: wrap;
+   flex-direction:column;
+    width: 400px;
     color: #333333;
     text-align: center;
+    vertical-align: middle;
+   
+   margin: auto;
+    padding: 0;
+/*
+    background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+*/
+
 }
 
 .reasons-title {
+    
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
     text-align: center;
     color: #000000;
+     
+   margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    
 }
 
 .interesting {
@@ -412,11 +407,15 @@ a {
 }
 
 .footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     color: #000000;
     background-color: #ffffff;
+    
 }
 
 .infrastructure-list,
@@ -579,11 +578,13 @@ a {
 }
 
 .welcome-page {
-    background-image: url("../img/bg.jpg");
-    background-size: 1200px 561px;
-    background-position: top center;
+    background-image: url(../img/shape.png),  url("../img/bg.jpg");
     background-repeat: no-repeat;
+    background-size: 1200px 57px, 1200px 561px;
+    background-position: bottom center, top center;
+   
 }
+
 
 /*стили сетки для inner*/
 
@@ -649,7 +650,7 @@ a {
 /*стили сетки*/
 
 .main-footer {
-    min-height: 120px;
+    
     padding: 36px;
 }
 
@@ -664,7 +665,7 @@ a {
 }
 
 .footer-social {
-    width: 155px;
+    width: 151px;
     margin-right: 225px;
 }
 
@@ -709,10 +710,7 @@ a {
 }
 
 
-.reasons-block {
-    width: 400px;
-    min-height: 257px;
-}
+
 
 
 .reasons-block-list {
@@ -722,14 +720,10 @@ a {
     padding: 0;
 
     list-style: none;
-    min-height: 257px;
+    
 }
 
-.feature-item {
 
-    padding-top: 161px;
-    padding-bottom: 86px;
-}
 
 
 .features {
@@ -737,37 +731,42 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+/*    flex-wrap: wrap;*/
 
     list-style: none;
-    min-height: 330px;
+   
 }
 
 .reason-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 1200px;
+    height: 258px;
     margin: 0;
     padding: 0;
+    
 }
 
 
 
 .first-reason-block {
     width: 100%;
-    min-height: 258px;
+    
     background-color: #81b3d2;
 }
 
 .first-reason-text {
+    display: flex;
+     flex-wrap: wrap;
+   flex-direction:column;
     width: 400px;
-    margin: 0;
-    padding-top: 47px;
-    padding-bottom: 65px;
-    padding-left: 60px;
-    padding-right: 60px;
-    list-style: none;
-    min-height: 258px;
-    justify-content: space-between;
+   list-style: none;
+     margin: 0;
+    padding: 0;
+    background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+   
 }
 
 .city-img {
@@ -782,47 +781,38 @@ a {
     width: 1200px;
 }
 
-.introduction {
-    width: 1200px;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    min-height: 153px;
-}
 
-.welcom-page {
+
+.welcome-page {
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 510px;
+
 }
 
-.welcom-img .welcom-page {
+.welcome-img  {
     width: 458px;
     height: 352px;
-    padding-top: 74px;
+    padding-top: 45px;
+    padding-bottom: 80px;
 }
 
-.info {
-    margin: 0;
-    padding: 0;
+.info
+ {
+    margin-right: auto;
+    padding-left: 73px;
 }
 
 
 
 .main-header {
-    width: 1200px;
-    min-height: 566px;
-    margin-bottom: 57px;
-    min-height: 70px;
+   margin-bottom: 55px;   
 }
 
 .main-navigation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 57px;
-    background-color: transparent;
 
 }
 
@@ -835,14 +825,176 @@ a {
     display: flex;
     width: 1200px;
     justify-content: space-between;
-
-}
-
-.site-navigation {
-    width: 1200px;
-    margin: 0;
+     margin: 0;
     padding: 0;
     list-style: none;
     align-items: center;
-    min-height: 57px;
+
 }
+
+/*для декоративных элементов*/
+
+
+
+
+.site-navigation a {
+    position: relative;
+
+    display: inline-block;
+     padding-top: 15px;
+    padding-bottom: 15px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.first-reason {
+    
+   margin: 0;
+    padding-bottom: 55px;
+    padding-left: 
+
+}
+
+
+
+.title-city {
+margin: 0;
+    
+    padding-left: 138px;
+    padding-right: 138px;
+    
+    padding-top: 40px;
+
+}
+
+
+
+.icon {
+    margin: 0;
+    margin-top: 60px;
+}
+
+.number-span {
+    margin-top: 30px;
+}
+
+.feature-item {
+/*    display: block;*/
+    
+}
+
+
+
+
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 50px;
+    background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
+}
+
+.social-button:active path {
+    fill: #88b6d1;
+}
+
+.academy-button:hover path,
+.academy-button:focus path{
+    fill: #81b3d2;
+}
+
+.academy-button:active path {
+    fill: #bdbbbc;
+}
+
+.title-bridge {
+    margin: 0;
+   padding-top: 45px;
+    padding-left: 124px;
+    padding-right: 124px;
+   
+    
+}
+
+.state-map
+ {
+    margin-left: auto;
+}
+
+.photos {
+    margin-right: auto;
+}
+
+.hotel-link {
+    margin-left: auto;
+    padding-right: 73px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reasons-paragraph.first {
+
+   
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 95px;
+    padding-right: 84px;
+}
+
+.number-reason {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.reasons-paragraph.second {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 84px;
+    padding-right: 84px;
+}
+
+.reasons-paragraph.third {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 84px;
+    padding-right: 73px;
+}
+
+
