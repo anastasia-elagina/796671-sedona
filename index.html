@@ -14,12 +14,12 @@
         <nav class="main-navigation">
 
             <ul class="site-navigation">
-                <li class="info"><a href="info.html">Информация</a>
+                <li class="site-item"><a href="info.html">Информация</a>
                 </li>
-                <li class="photos"><a href="photos-video.html">Фото и видео</a></li>
+                <li class="site-item"><a href="photos-video.html">Фото и видео</a></li>
 
-                <li class="state-map"><a href="state-map.html">Карта штата</a></li>
-                <li class="hotel-link"><a href="inner.html">Гостиницы</a></li>
+                <li class="site-item"><a href="state-map.html">Карта штата</a></li>
+                <li class="site-item"><a href="inner.html">Гостиницы</a></li>
             </ul>
             <div class="logo">
                 <a class="main-header-logo">
@@ -28,14 +28,14 @@
             </div>
         </nav>
         <div class="welcome-page">
-            <div class="welcome-img">
-                <img src="img/welcome.png" width="458" height="352" alt="Welcom">
-            </div>
+
+            <img src="img/welcome.png" width="458" height="352" alt="Welcom">
         </div>
+
     </header>
     <main>
         <section class="introduction">
-            <h1>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!
+            <h1 class="intro-title">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!
             </h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
@@ -54,22 +54,22 @@
 
 
                     <ul class="features">
-                        <li class="feature-item">
-                            <img class="icon" src="img/icon-1.svg">
-                            <h3 class="features-title">Жильё</h3>
+                        <li class="feature-item icon-1">
+
+                            <h3 class="features-title ">Жильё</h3>
                             <p class="houses">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 
                         </li>
 
-                        <li class="feature-item">
-                           <img class="icon" src="img/icon-2.svg">
-                            <h3 class="features-title">Еда</h3>
+                        <li class="feature-item icon-3">
+
+                            <h3 class="features-title food-title">Еда</h3>
                             <p class="food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 
                         </li>
-                        <li class="feature-item">
-                             <img class="icon" src="img/icon-3.svg">
-                            <h3 class="features-title">Сувениры</h3>
+                        <li class="feature-item icon-2">
+
+                            <h3 class="features-title souvenirs-title">Сувениры</h3>
                             <p class="souvenirs">Не только китайского, но и местного производства!</p>
 
                         </li>
@@ -84,7 +84,7 @@
                         <div class="first-reason-text">
                             <h2 class="title-bridge">Там есть Мост дьявола</h2>
                             <span class="number-reason">— №2 —</span>
-                            <p class="first-reason">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                            <p class="first-reason bridge-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
                     </div>
 
@@ -94,17 +94,17 @@
                 <li class="reasons-block">
                     <h2 class="reasons-title">Небольшая площадь</h2>
                     <span class="number-reason">— №3 —</span>
-                    <p class="reasons-paragraph first">Все достопримечательности находятся очень близко</p>
+                    <p class="paragraph area">Все достопримечательности находятся очень близко</p>
                 </li>
                 <li class="reasons-block">
                     <h2 class="reasons-title">Красивая дорога</h2>
                     <span class="number-reason">— №4 —</span>
-                    <p class="reasons-paragraph second">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <p class="paragraph road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="reasons-block">
                     <h2 class="reasons-title">Мало туристов</h2>
                     <span class="number-reason">— №5 —</span>
-                    <p class="reasons-paragraph third">Большинство едет в Гранд каньон и толпится там</p>
+                    <p class="paragraph tourists">Большинство едет в Гранд каньон и толпится там</p>
                 </li>
 
             </ul>
@@ -112,29 +112,30 @@
 
         <section class="interesting">
             <h2 class="interesting-title">Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="dates">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </section>
-        <div class="form">
-            <div class="form-block">
-                <form class="search-hotel" action="http://echo.htmlacademy.ru" method="get">
-                    <a class="button button-text" href="search-hotel.html">Поиск гостиницы в Седоне</a>
-                    <p class="search-data">
-                        <label for="arrival-date">Дата заезда</label>
-                        <input class="date-form" type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
-                    </p>
-                    <p class="search-data">
-                        <label for="departure-date">Дата выезда</label>
-                        <input class="date-form" type="text" name="date" id="departure-date" placeholder="4 июля 2017">
-                    </p>
-                    <p class="search-data">
-                        <label for="adult">Взрослые <input class="guests-amount" type="number" min="1" max="10" name="number" id="adult" placeholder="2"></label>
-                        <label for="children">Дети <input class="guests-amount" type="number" min="0" max="10" name="number" id="children" placeholder="0">
+
+        <div class="form-block">
+            <form class="search-hotel" action="http://echo.htmlacademy.ru" method="get">
+                <a class="button button-text" href="search-hotel.html">Поиск гостиницы в Седоне</a>
+                <p class="search-data">
+                    <label for="arrival-date">Дата заезда:</label>
+                    <input class="date-form" type="text" name="date" id="arrival-date" placeholder="24 апреля 2017">
+                </p>
+                <p class="search-data">
+                    <label for="departure-date">Дата выезда:</label>
+                    <input class="date-form" type="text" name="date" id="departure-date" placeholder="4 июля 2017">
+                </p>
+                <p class="search-data">
+                    <label for="adult">Взрослые: <input class="guests-amount" type="number" min="1" max="10" name="number" id="adult" placeholder="2"></label>
+                    <label for="children">Дети: <input class="guests-amount" type="number" min="0" max="10" name="number" id="children" placeholder="0">
         </label>
-                    </p>
-                    <button class="button-search" type="submit">Найти</button>
-                </form>
-            </div>
+                </p>
+                <button class="button-search" type="submit">Найти</button>
+            </form>
         </div>
+
+
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30477.062983472628!2d-111.78446452205017!3d34.86491477068535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1527918615497" width="1200" height="473" style="border:0" allowfullscreen></iframe>
         </div>
@@ -143,7 +144,7 @@
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-hashtag">
-                <p class="hashtag">#visitsedona</p>
+                <span class="hashtag">#visitsedona</span>
             </div>
             <div class="footer-social">
                 <ul class="social-list">

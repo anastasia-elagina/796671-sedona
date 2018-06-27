@@ -12,14 +12,14 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-           
-                <ul class="site-navigation">
-                    <li class="info"><a href="info.html">Информация</a></li>
-                    <li class="photos"><a href="photos-video.html">Фото и видео</a></li>
 
-                    <li class="state-map"><a href="state-map">Карта штата</a></li>
-                    <li class="visited-link hotel-link"><a href="inner.html">Гостиницы</a></li>
-                </ul>
+            <ul class="site-navigation">
+                <li class="site-item"><a href="info.html">Информация</a></li>
+                <li class="site-item"><a href="photos-video.html">Фото и видео</a></li>
+
+                <li class="site-item"><a href="state-map">Карта штата</a></li>
+                <li class="visited-link site-item"><a href="inner.html">Гостиницы</a></li>
+            </ul>
 
             <div class="logo">
                 <a href="index.html">
@@ -31,29 +31,37 @@
     <main>
         <form class="hotels-background" action="http://echo.htmlacademy.ru" method="get">
             <section class="infrastructure">
-                <h2>Инфраструктура</h2>
+                <h2 class="infrastructure-title">Инфраструктура:</h2>
                 <ul class="infrastructure-list">
-                    <li><input class="checkbox-list" type="checkbox" id="pool" checked>
+                    <li class="infrastructure-item"><span class="visually-hidden"><input class="checkbox-list" type="checkbox" id="pool" checked></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+
+
                         <label for="pool">Бассейн</label>
                     </li>
-                    <li><input class="checkbox-list" type="checkbox" id="parking">
+                    <li class="infrastructure-item"><span class="visually-hidden"><input class="checkbox-list" type="checkbox" id="parking"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
                         <label for="parking">Парковка</label>
                     </li>
-                    <li><input class="checkbox-list" type="checkbox" id="wi-fi">
+                    <li class="infrastructure-item"><span class="visually-hidden"><input class="checkbox-list" type="checkbox" id="wi-fi"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
                         <label for="wi-fi">Wi-fi</label>
                     </li>
                 </ul>
             </section>
             <section class="housing">
-                <h2>Жильё</h2>
+                <h2 class="housing-title">Тип жилья:</h2>
                 <ul class="housing-list">
-                    <li><input class="checkbox-list" type="checkbox" id="hotel" checked>
+                    <li class="housing-item"><span class="visually-hidden"><input class="checkbox-list" type="checkbox" id="hotel" checked></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                         <label for="hotel">Гостиница</label>
                     </li>
-                    <li><input class="checkbox-list" type="checkbox" id="motel" checked>
+                    <li class="housing-item"><span class="visually-hidden"><input class="checkbox-list" type="checkbox" id="motel" checked></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                         <label for="motel">Мотель</label>
                     </li>
-                    <li><input class="checkbox-list" type="checkbox" id="apartment" checked>
+                    <li class="housing-item"><span class="visually-hidden"><input class="checkbox-list" type="checkbox" id="apartment" checked></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                         <label for="apartment">Апартаменты</label>
                     </li>
                 </ul>
@@ -78,59 +86,100 @@
             </section>
         </form>
         <section class="search-results">
-            <h2 class="found">Найдено:3</h2>
+            <h2 class="found">Найдено: 3</h2>
             <p class="sorting">Сортировка:</p>
             <ul class="sorting-list">
-                <li class="sort-item sort-current"><a href="inner.html?sort=price">по цене</a></li>
+                <li class="sort-item sort-current">
+
+                    <a href="inner.html?sort=price">по цене</a></li>
                 <li class="sort-item"><a href="inner.html?sort=type">по типу</a></li>
-                <li class="sort-item"><a href="inner.html?sort=rating">по рейтингу</a></li>
-                <li class="ascending"><a href="inner.html?sort=ascending"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
-                <li class="descending"><a href="inner.html?sort=descending"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
+                <li class="sort-item sort-raiting"><a href="inner.html?sort=rating">по рейтингу</a></li>
+                <li class="sort-link ascending"><a href="inner.html?sort=ascending"><span class="visually-hidden">Сортировка по возрастанию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </a></li>
+                <li class="sort-link descending"><a href="inner.html?sort=descending"><span class="visually-hidden">Сортировка по убыванию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                </a></li>
             </ul>
         </section>
         <section class="housing-list">
-            <ul class="hotel-wrapper">
+            <ul class="hotel-list">
                 <li class="hotel-info-list">
-                    <section class="hotel-photo"><img src="img/amara.jpg" width="135" height="90" alt="Amara resort">
-                    </section>
-                    <section class="about-hotel">
-                        <h2 class="hotel-title">Amara resort & SPA</h2>
-                        <span class="description">гостиница</span>
-                        <span class="description">от 4000 р.</span>
-                        <a href="amara-resort-details.html"><span class="details">подробнее</span></a>
-                        <a href="amara-resort-booking.html"><span class="booking">забронировать</span></a>
-                    </section>
-                    <section class="raiting-scale">
-                        <span class="description">рейтинг 8,5</span>
-                    </section>
+                    <div class="hotel-wrapper">
+                        <section class="hotel-photo"><img src="img/amara.jpg" width="135" height="90" alt="Amara resort">
+                        </section>
+                        <section class="about-hotel">
+                            <h2 class="hotel-title">Amara resort & SPA</h2>
+                            <div class="price-description">
+                                <span class="description">гостиница</span>
+                                <span class="description">от 4000 р.</span>
+                            </div>
+                            <div class="amara-links">
+                                <a href="amara-resort-details.html"><span class="details">подробнее</span></a>
+                                <a href="amara-resort-booking.html"><span class="booking">забронировать</span></a>
+                            </div>
+                        </section>
+                        <section class="raiting-scale">
+                            <div class="raiting-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                            </div>
+                            <span class="raiting">рейтинг 8,5</span>
+                        </section>
+                    </div>
                 </li>
                 <li class="hotel-info-list">
-                    <section class="hotel-photo"><img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
-                    </section>
-                    <section class="about-hotel">
-                        <h2 class="hotel-title">Desert quail inn</h2>
-                        <span class="description">мотель</span>
-                        <span class="description">от 3000 р.</span>
-                        <a href="desert-quail-details.html"><span class="details">подробнее</span></a>
-                        <a href="desert-quail-booking.html"><span class="booking">забронировать</span></a>
-                    </section>
-                    <section class="raiting-scale">
-                        <span class="description">рейтинг 8,9</span>
-                    </section>
+                    <div class="hotel-wrapper">
+                        <section class="hotel-photo"><img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
+                        </section>
+                        <section class="about-hotel">
+                            <h2 class="hotel-title">Desert quail inn</h2>
+                            <div class="price-description">
+                                <span class="description">мотель</span>
+                                <span class="description  price-motel">от 3000 р.</span>
+                            </div>
+                            <div class="desert-links">
+                                <a href="desert-quail-details.html"><span class="details">подробнее</span></a>
+                                <a href="desert-quail-booking.html"><span class="booking">забронировать</span></a>
+                            </div>
+                        </section>
+                        <section class="raiting-scale">
+                            <div class="raiting-wrapper desert-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+
+                            </div>
+                            <span class="raiting">рейтинг 8,9</span>
+                        </section>
+                    </div>
                 </li>
                 <li class="hotel-info-list">
-                    <section class="hotel-photo"><img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diablo">
-                    </section>
-                    <section class="about-hotel">
-                        <h2 class="hotel-title">Villas at poco diablo</h2>
-                        <span class="description">апартаменты</span>
-                        <span class="description">от 2000 р.</span>
-                        <a href="poco-diablo-details.html"><span class="details">подробнее</span></a>
-                        <a href="poco-diablo-booking.html"><span class="booking">забронировать</span></a>
-                    </section>
-                    <section class="raiting-scale">
-                        <span class="description">рейтинг 9,2</span>
-                    </section>
+                    <div class="hotel-wrapper">
+                        <section class="hotel-photo"><img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diablo">
+                        </section>
+                        <section class="about-hotel">
+                            <h2 class="title-villas">Villas at poco diablo</h2>
+                            <div class="price-description">
+                                <span class="description">апартаменты</span>
+                                <span class="description price-villas">от 2000 р.</span>
+                            </div>
+                            <div class="villas-links">
+                                <a href="poco-diablo-details.html"><span class="details">подробнее</span></a>
+                                <a href="poco-diablo-booking.html"><span class="booking">забронировать</span></a>
+                            </div>
+                        </section>
+                        <section class="raiting-scale">
+                            <div class="raiting-wrapper villas-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+
+                            </div>
+                            <span class="raiting">рейтинг 9,2</span>
+                        </section>
+                    </div>
                 </li>
             </ul>
         </section>
