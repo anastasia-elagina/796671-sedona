@@ -8,7 +8,9 @@ body {
     background-color: #ffffff;
     width: 1200px;
     margin: 0 auto;
+   box-shadow:  0 5px 15px 0 rgba(0,1,1,0.2);
 }
+
 
 a {
     text-decoration: none;
@@ -449,9 +451,9 @@ a {
     background-color: #ffffff;
     width: 200px;
     margin: 0;
-    padding-top: 5px;
-    padding-left: 31px;
-    padding-right: 99px;
+    padding-top: 6px;
+    padding-left: 32px;
+    padding-right: 97px;
 
 }
 
@@ -596,9 +598,9 @@ a {
     margin-left: 255px;
     margin-right: 70px;
     padding-left: 13px;
-    padding-right: 10px;
-    padding-top: 6px;
-    padding-bottom: 5px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .found {
@@ -725,7 +727,7 @@ a {
 .hotels-background {
     background-image: url("../img/hotels-background.jpg");
     background-size: 1200px 562px;
-    background-position: top bottom;
+    background-position: center 16%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
@@ -749,7 +751,7 @@ a {
 .hotel-info-list {
     padding: 0;
     margin: 0;
-    margin-bottom: 25px;
+   
 }
 
 .hotel-list {
@@ -769,6 +771,7 @@ a {
     padding-top: 31px;
     padding-left: 72px;
     list-style: none;
+    margin-bottom: 25px;
 
 }
 
@@ -776,11 +779,12 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
+background-color: #ffffff;
 
     list-style: none;
     margin: 0;
     padding: 0;
+     margin-bottom: 25px;
 
 
 }
@@ -792,7 +796,7 @@ a {
 
     margin: 0;
     margin-left: auto;
-
+ margin-bottom: 30px;
 }
 
 
@@ -950,7 +954,7 @@ a {
 .main-navigation {
     display: block;
     flex-direction: column;
-
+background-color: #ffffff;
 }
 
 .main-header-logo {
@@ -1065,8 +1069,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 50px;
+    width: 46px;
+    height: 49px;
     background-color: #81b3d2;
     margin: 0;
 }
@@ -1260,6 +1264,8 @@ a {
 .academy-button {
     margin: 0;
     padding-top: 6px;
+    padding-right: 3px;
+    
 }
 
 
@@ -1289,9 +1295,19 @@ a {
     padding-left: 15px;
 }
 
-.housing-list {
-    margin: 0;
+.hotels-listing {
+    display: flex;
 
+    flex-direction: column;
+
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+
+    color: #ffffff;
+background-color: #ffffff;
 }
 
 .hotel-wrapper {
@@ -1321,11 +1337,11 @@ a {
 }
 
 .raiting-wrapper {
-
+    display: block;
     margin: 0;
     margin-top: 30px;
-    margin-left: 280px;
-    margin-right: 70px;
+    margin-left: 277px;
+    margin-right: 66px;
 
 }
 
@@ -1337,7 +1353,7 @@ a {
     margin: 0;
     margin-top: 30px;
     margin-left: 300px;
-    margin-right: 75px;
+    margin-right: 72px;
 }
 
 .raiting-wrapper.villas-stars {
@@ -1460,3 +1476,10 @@ a {
     padding-right: 7px;
     padding-bottom: 30px;
 }
+.star {
+    margin: 0;
+    padding-right: 1px;
+    padding-left: 0;
+}
+
+
