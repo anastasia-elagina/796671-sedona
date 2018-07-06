@@ -20,7 +20,6 @@
                 <li class="site-item"><a href="state-map">Карта штата</a></li>
                 <li class="visited-link site-item"><a href="inner.html">Гостиницы</a></li>
             </ul>
-
             <div class="logo">
                 <a href="index.html">
            <img src="img/logo.png" width="138" height="70" alt="Sedona">
@@ -31,20 +30,16 @@
     <main>
         <form class="hotels-background" action="http://echo.htmlacademy.ru" method="get">
             <section class="infrastructure">
-                <h2 class="infrastructure-title">Инфраструктура:</h2>
-                <ul class="infrastructure-list">
-                    <li class="infrastructure-item">
-                    
-                    <input class="visually-hidden checkbox-list" type="checkbox" id="pool" checked>
-                    
-                    <label class="filter-choice" for="pool">Бассейн</label>
+                <h2 class="housing-title">Инфраструктура:</h2>
+                <ul class="housing-list">
+                    <li class="housing-item">
+                        <input class="visually-hidden checkbox-list" type="checkbox" id="pool" checked>
+                        <label for="pool">Бассейн</label>
                     </li>
-                    <li class="infrastructure-item"><input class="visually-hidden checkbox-list" type="checkbox" id="parking">
-                       
-                        <label for="parking">Парковка</label>
+                    <li class="housing-item"><input class="visually-hidden checkbox-list" type="checkbox" id="parking">
+ <label for="parking">Парковка</label>
                     </li>
-                    <li class="infrastructure-item"><input class="visually-hidden checkbox-list" type="checkbox" id="wi-fi">
-                       
+                    <li class="housing-item"><input class="visually-hidden checkbox-list" type="checkbox" id="wi-fi">
                         <label for="wi-fi">Wi-fi</label>
                     </li>
                 </ul>
@@ -53,41 +48,39 @@
                 <h2 class="housing-title">Тип жилья:</h2>
                 <ul class="housing-list">
                     <li class="housing-item">
-                     <input class="visually-hidden checkbox-list" type="checkbox" id="hotel" checked>
-                       <label for="hotel">Гостиница</label>
+                        <input class="visually-hidden checkbox-list" type="checkbox" id="hotel" checked>
+                        <label for="hotel">Гостиница</label>
                     </li>
                     <li class="housing-item"><input class="visually-hidden checkbox-list" type="checkbox" id="motel" checked disabled>
-                        
                         <label for="motel">Мотель</label>
                     </li>
                     <li class="housing-item"><input class="visually-hidden checkbox-list" type="checkbox" id="apartment" checked>
-                       
                         <label for="apartment">Апартаменты</label>
                     </li>
                 </ul>
             </section>
-           <section class="filter-range">
-      <div class="filter-range-title">Стоимость в сутки (р):</div>
-      <div class="price-controls">
-        <label class="min-price">от <input type="text" name="min-price" placeholder="0"></label>
-        <label class="max-price">до <input type="text" name="max-price" placeholder="3000"></label>
-      </div>
-      <div class="range-controls">
-        <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="range-toggle range-toggle-min"></div>
-        <div class="range-toggle range-toggle-max"></div>
-      </div>
-      <button class="btn-transparent" type="submit">Показать</button>
-    </section >
+            <section class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" placeholder="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" placeholder="3000"></label>
+                </div>
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+            </section>
         </form>
         <section class="search-results">
             <h2 class="found">Найдено: 3</h2>
             <p class="sorting">Сортировка:</p>
             <ul class="sorting-list">
                 <li class="sort-item sort-current">
-<a href="inner.html?sort=price">по цене</a></li>
+                    <a href="inner.html?sort=price">по цене</a></li>
                 <li class="sort-item"><a href="inner.html?sort=type">по типу</a></li>
                 <li class="sort-item sort-raiting"><a href="inner.html?sort=rating">по рейтингу</a></li>
                 <li class="sort-link ascending"><a href="inner.html?sort=ascending"><span class="visually-hidden">Сортировка по возрастанию</span>
@@ -146,7 +139,6 @@
                                 <svg class="star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
                                 <svg class="star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
                                 <svg class="star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-
                             </div>
                             <span class="raiting">рейтинг: 8,9</span>
                         </section>
@@ -171,7 +163,6 @@
                             <div class="raiting-wrapper villas-stars">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-
                             </div>
                             <span class="raiting">рейтинг: 9,2</span>
                         </section>
@@ -195,7 +186,6 @@
                     </a></li>
                     <li><a class="social-button" href="#"><span class="visually-hidden"> Youtube</span>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
-
                     </a></li>
                 </ul>
             </div>
