@@ -1826,23 +1826,23 @@ input[type="number"]:-ms-input-placeholder {
 
 @-webkit-keyframes bounce {
 	0% {
-		-webkit-transform: translateX(-50%) translateY(-2000px);
-		transform: translateX(-50%) translateY(-2000px);
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
 	}
 	100% {
-		-webkit-transform: translateX(-50%) translateY(0);
-		transform: translateX(-50%) translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
 @keyframes bounce {
 	0% {
-		-webkit-transform: translateX(50%) translateY(-2000px);
-		transform: translateX(-50%) translateY(-2000px);
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
 	}
 	100% {
-		-webkit-transform: translateX(-50%) translateY(0);
-		transform: translateX(-50%) translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
