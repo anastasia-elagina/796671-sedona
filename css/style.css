@@ -355,11 +355,12 @@ a {
 
 .sorting-list {
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 
+	margin: 0;
 	padding-top: 35px;
 	padding-bottom: 33px;
-	margin: 0;
 }
 
 .housing ul {
@@ -376,10 +377,8 @@ a {
 
 .search-results {
 	display: flex;
-
 	background-color: #ffffff;
 
-	padding-left: 72px;
 	padding-right: 73px;
 }
 
@@ -387,10 +386,7 @@ a {
 	display: flex;
 
 	background-color: #ffffff;
-
 	margin: 0;
-	padding-top: 35px;
-	padding-bottom: 33px;
 }
 
 .about-hotel h2 {
@@ -410,7 +406,7 @@ a {
 	color: #cacaca;
 }
 
-.sort-item:not(:last-child) {
+.sort-item {
 	display: block;
 
 	margin: 0;
@@ -474,7 +470,8 @@ a {
 
 .found {
 	display: block;
-
+	white-space: nowrap;
+	
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -484,6 +481,8 @@ a {
 	margin: 0;
 	padding-top: 30px;
 	padding-bottom: 25px;
+	padding-left: 72px;
+	padding-right: 47px;
 }
 
 .sorting {
@@ -1259,6 +1258,8 @@ input[type="number"]::-webkit-inner-spin-button {
 	margin: 0;
 	padding-top: 11px;
 	padding-bottom: 11px;
+	padding-left: 35px;
+	padding-right: 35px;
 	border: none;
 	outline: none;
 }
@@ -1688,11 +1689,13 @@ input[type="number"]:-ms-input-placeholder {
 	top: 62px;
 	right: 57px;
 }
+
 :-ms-fullscreen,
 :root .calendar {
 	top: 130px;
 	right: 57px;
 }
+
 :-ms-fullscreen,
 :root .price-villas {
 	padding-left: 10px;
@@ -1891,3 +1894,5 @@ input[type="number"]:-ms-input-placeholder {
 		transform: translateX(10px);
 	}
 }
+
+
